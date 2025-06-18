@@ -4,7 +4,7 @@ buildscript {
         maven { url 'https://cdn.fox2code.com/maven' }
     }
     dependencies {
-        classpath('com.fox2code.FoxLoader:dev:2.0-alpha19')
+        classpath('com.fox2code.FoxLoader:dev:2.0-alpha22')
     }
 }
 
@@ -27,14 +27,14 @@ jar {
 }
 
 foxloader {
-    modId = "examplemod"
-    modName = "FoxLoader Example Mod"
+    modId = "reindevdiscordrpc"
+    modName = "ReIndev Discord RPC"
     modIcon = "assets/examplemod/icon.png"
     modVersion = project.version
     modAuthors = "Fox2Code"
-    modWebsite = "https://github.com/Fox2Code/FoxLoaderExampleMod"
-    modMain = "com.fox2code.examplemod.ExampleMod"
-    modDesc("This is an example mod for FoxLoader 2.0")
+    modWebsite = "https://github.com/KingColton1/ReIndev-Discord-RPC/"
+    modMain = "com.kingcolton1.reindevdiscordrpc.ReIndevDiscordRPC"
+    modDesc("Discord RPC for ReIndev")
     modDesc()
-    modDesc("You can check it's code at https://github.com/Fox2Code/FoxLoaderExampleMod")
+    modDesc("You can check it's code at https://github.com/KingColton1/ReIndev-Discord-RPC")
 }
