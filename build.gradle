@@ -1,6 +1,7 @@
 buildscript {
     repositories {
         mavenCentral()
+        maven { url 'https://repo1.maven.org/maven2/' }
         maven { url 'https://cdn.fox2code.com/maven' }
     }
     dependencies {
@@ -10,12 +11,19 @@ buildscript {
 
 apply plugin: 'foxloader.dev'
 
-group = 'com.fox2code'
-version = '2.0.0'
+group = 'com.kingcolton1'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
 
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation 'io.github.cdagaming:DiscordIPC:0.10.5'
 }
 
 test {
@@ -29,12 +37,10 @@ jar {
 foxloader {
     modId = "reindevdiscordrpc"
     modName = "ReIndev Discord RPC"
-    modIcon = "assets/examplemod/icon.png"
+    modIcon = "assets/reindevdiscordrpc/icon.png"
     modVersion = project.version
-    modAuthors = "Fox2Code"
+    modAuthors = "KingColton1"
     modWebsite = "https://github.com/KingColton1/ReIndev-Discord-RPC/"
-    modMain = "com.kingcolton1.reindevdiscordrpc.ReIndevDiscordRPC"
-    modDesc("Discord RPC for ReIndev")
-    modDesc()
-    modDesc("You can check it's code at https://github.com/KingColton1/ReIndev-Discord-RPC")
+    modMain = "com.kingcolton1.reindevdiscordrpc.ReindevDiscordRPC"
+    modDesc = "Discord RPC for ReIndev"
 }
