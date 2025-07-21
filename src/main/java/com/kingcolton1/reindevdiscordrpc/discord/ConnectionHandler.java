@@ -8,12 +8,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ConnectionHandler {
-    private final String appID = "1385147749128867901";
+    private final String appID = "1396734001590566952";
     private final Logger logger;
     private Thread callbackThread;
 
     public ConnectionHandler() {
-        logger = LoggerFactory.getLogger("ReIndev RPC");
+        logger = LoggerFactory.getLogger(ConnectionHandler.class);
         init();
     }
 

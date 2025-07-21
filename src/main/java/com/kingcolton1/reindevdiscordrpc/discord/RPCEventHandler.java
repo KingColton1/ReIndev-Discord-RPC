@@ -107,7 +107,7 @@ public class RPCEventHandler {
         try {
             Minecraft mc = Minecraft.getInstance();
             if (mc != null && mc.theWorld != null) {
-                if (mc.theWorld.isRemote) {
+                if (mc.theWorld.isServer) { // Broken for server detection in multiplayer
                     SwitchHandler.switchServer(1);
                 } else {
                     SwitchHandler.switchServer(0);
