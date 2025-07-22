@@ -10,7 +10,7 @@ import net.arikia.dev.drpc.DiscordRichPresence;
 
 public class ReindevDiscordRPC extends Mod {
     public static ReindevDiscordRPC instance;
-    public static final DiscordRPCConfig CONFIG = new DiscordRPCConfig();
+    public static final Config CONFIG = new Config();
     public RPC rpc;
     private ConnectionHandler connectionHandler;
     private RPCEventHandler eventHandler;
@@ -23,10 +23,5 @@ public class ReindevDiscordRPC extends Mod {
         connectionHandler = new ConnectionHandler();
         eventHandler = new RPCEventHandler();
         FoxLoaderEvents.INSTANCE.registerEvents(eventHandler);
-    }
-
-    public static class DiscordRPCConfig {
-        @ConfigEntry(configName = "Show Server IP")
-        public boolean showServerIP = true;
     }
 }

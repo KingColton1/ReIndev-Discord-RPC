@@ -30,7 +30,6 @@ public class ConnectionHandler {
                     } else {
                         avatar_url += discordUser.userId + "/" + discordUser.avatar + ".png";
                     }
-                    logger.info(String.format("RPC Ready. Registered user %s#%s (ID: %s, avatar: %s)", discordUser.username, discordUser.discriminator, discordUser.userId, avatar_url));
                 })).build();
 
         DiscordRPC.discordInitialize(appID, eventHandlers, true);
