@@ -6,6 +6,7 @@ Support on client side ONLY, and ReIndev 2.9 or up.
 
 There are two settings to configure:
 `Dimension Visibility` - Toggle to display or hide dimension you are on.
+
 `Server IP Visibility` - Toggle to display or hide server IP you are connected to.
 
 # Known Bugs
