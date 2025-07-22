@@ -1,11 +1,12 @@
-# Fox Loader Example Mod
+# ReIndev Discord RPC
 
-Example mod for [FoxLoader](https://github.com/Fox2Code/FoxLoader)
+Discord RPC for ReIndev. Show off your activity status when you play ReIndev!
 
-Rat block texture by [@silveros](https://github.com/silverosre)
+Support on client side ONLY, and ReIndev 2.9 or up.
 
-## Documentation
+There are two settings to configure:
+`Dimension Visibility` - Toggle to display or hide dimension you are on.
+`Server IP Visibility` - Toggle to display or hide server IP you are connected to.
 
-For mixins usage check here: https://github.com/2xsaiko/mixin-cheatsheet
-
-For spark usage check here: https://spark.lucko.me/docs/Command-Usage
+# Known Bugs
+See [issues](https://github.com/KingColton1/ReIndev-Discord-RPC/issues).
